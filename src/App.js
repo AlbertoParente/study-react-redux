@@ -1,5 +1,5 @@
 import logo from './logo.svg'
-import './App.css'
+import './app.css'
 import Card from './components/Card'
 
 function App() {
@@ -7,10 +7,12 @@ function App() {
     <div className="App">
       <h1>Activity React-Redux (Simple)</h1>
       <div className="line">
-        <Card></Card>
+        <Card title="Card 1" red>X</Card>
+        <Card title="Card 2" green>X</Card>
       </div>
       <div className="line">
-        <Card></Card>
+        <Card title="Card 3" blue>Y</Card>
+        <Card title="Card 4" purple>Y</Card>
       </div>
     </div>
   )
