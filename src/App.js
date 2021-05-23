@@ -1,7 +1,9 @@
 import logo from './logo.svg'
 import './app.css'
-import Card from './components/Card'
 import Interval from './components/Interval'
+import Average from './components/Average'
+import Sum from './components/Sum'
+import Sortition from './components/Sortition'
 
 function App() {
   return (
@@ -11,9 +13,9 @@ function App() {
         <Interval />
       </div>
       <div className="line">
-        <Card title="Card 2" green>X</Card>
-        <Card title="Card 3" blue>Y</Card>
-        <Card title="Card 4" purple>Y</Card>
+        <Average />
+        <Sum />
+        <Sortition />
       </div>
     </div>
   )
