@@ -10,16 +10,15 @@ export default props => {
             <div className="Interval">
                 <span>
                     <strong>Min:</strong>
-                    <input type="number" value={min} 
-                        onChange={e => props.onMinhanged(+e.target.value)} />
+                    <input type="number" value={min}
+                        onChange={e => props.onMinChanged(+e.target.value)} />
                 </span>
                 <span>
                     <strong>Max:</strong>
-                    <input type="number" value={max} 
-                        onChange={e => props.onMaxhanged(+e.target.value)} />
+                    <input type="number" value={max}
+                        onChange={e => props.onMaxChanged(+e.target.value)} />
                 </span>
             </div>
-                
         </Card>
     )
 }

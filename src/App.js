@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <h1>Activity React-Redux (Simple)</h1>
       <div className="line">
-        <Interval min={min} max={max} 
+        <Interval min={min} max={max}
           onMinChanged={setMIn} onMaxChanged={setmax} />
       </div>
       <div className="line">
