@@ -1,34 +1,8 @@
 import { createStore, combineReducers } from 'redux'
+import numberReducer from './reducers/numbers'
 
 const reducers = combineReducers({
-    numbers: function(state, action) {
-        switch(action.type) {
-            case 'NUM_MIN_ALTER':
-                return {
-                    ...state,
-                    min: action.payload
-                }
-            case 'NUM_MAX_ALTER':
-                return {
-                    ...state,
-                    max: action.payload
-                }
-            default:
-                return {
-                    min: 3,
-                    max: 33
-                }
-        }
-    },
-    names: function(state, action) {
-        console.log('Reducer Names...')
-        console.log(state, ' ', action)
-        return [
-            'Alberto',
-            'Juliana',
-            'Julia'
-        ]
-    }
+    numbers: numberReducer,
 })
 
 function storeConfig() {
