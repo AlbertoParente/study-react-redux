@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import Card from './Card'
 
 const Average = props => {
-    const {min, max} = props
+    const { min, max } = props
 
     return (
         <Card title="Avarege of Number" green>

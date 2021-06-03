@@ -4,6 +4,7 @@ import Card from './Card'
 
 function Sum(props) {
     const { min, max } = props
+    
     return (
         <Card title="Sum of Number" blue>
             <div>
